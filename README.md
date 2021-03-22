@@ -55,3 +55,6 @@ Si vous êtes intéressé par le futur du bot [vous retrouverez tout ici !](http
 ---
 
 En cas de problème, merci de faire un signalement dans l'onglet **Issue** et de ne PAS me MP sur discord. Je ne risque pas de le voir ! 
+
+Le serveur est actuellement hébergé via REPLIT.COM, une solution totalement gratuite. Cependant, si le bot devient connu, je devrai utiliser des hébergeurs plus chers et complexe. Dans ce cas, il est possible qu'un petit patreon soit ouverts pour couvrir les coûts d'utilisation.
+Si le bot ne peut pas être couvert malgré tout, je le rendrai privée pour mon utilisation personnel. 

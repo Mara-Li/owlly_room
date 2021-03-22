@@ -1,4 +1,7 @@
 # OWLLY : The special french bot 
+
+[https://discord.com/api/oauth2/authorize?client_id=803714709059928064&permissions=8&scope=bot](Invitation)
+
 Owlly est un bot qui permet de créer des pièces... Mais pas que !
 
 Initialement pensée pour uniquement créer des channels à partir d'une réaction, mais il s'est étoffé au fur et à mesure des besoins que j'avais pour la gestion administrative de mes RP.

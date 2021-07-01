@@ -50,7 +50,6 @@ Les autres fonctions sont :
 - La suppression automatique des messages de discord sur les pins (je déteste ça)
 - Une fonction pour mettre des joueurs en fiche validée, avec une configuration des rôles toujours mis. La fonction permet de créer des rôles à la volée et de les ajouter directement. 
 
-Si vous êtes intéressé par le futur du bot [vous retrouverez tout ici !](https://share.clickup.com/b/h/4exrp-519/07a19e41983fc00)
 
 ---
 

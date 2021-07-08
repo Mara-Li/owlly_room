@@ -24,9 +24,6 @@ class CogUtils(
     @commands.Cog.listener()
     async def on_ready(self):
         print("[LOGS] ONLINE")
-        with open("../avatar.ping", 'rb') as f:
-            image=f.read()
-        await self.bot.edit(avatar=image)
 
     @commands.Cog.listener()
     async def on_message(self, message):

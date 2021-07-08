@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:OwllyBot/owlly_room.git
 	branch = main
-	commit = cd43452674ffb3c11a9dd5d659d95cf2ab89df19
-	parent = 50a7ea3d3eb9c22521a821bd5d457fe9215220f9
+	commit = efdd24f5b3fd6368fe3fdbc75d3994fbd02c0124
+	parent = 4fb97e71bec9be78f8509c5fa9e031dc17150035
 	method = merge
 	cmdver = 0.4.3

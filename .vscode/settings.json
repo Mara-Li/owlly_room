@@ -1,5 +1,0 @@
-{
-  "python.pythonPath": "C:\\Users\\Lili\\AppData\\Local\\Microsoft\\WindowsApps\\python3.9.exe",
-  "python.linting.enabled": true,
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} ${separator} [Branch: main]"
-}

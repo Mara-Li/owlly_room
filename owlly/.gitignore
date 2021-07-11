@@ -1,1 +1,11 @@
-../../owlly_room/.gitignore
+.history/
+.vscode/
+DB Browser for SQLite
+*.db-journal
+__pycache__/
+*.pyc
+cogs/__pycache__/
+.env
+BITE TESTING 
+BITE
+BITE

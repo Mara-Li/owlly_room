@@ -1,1 +1,1 @@
-../../owlly_room/start.sh
+python3 main.py

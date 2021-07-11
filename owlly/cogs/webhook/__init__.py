@@ -1,1 +1,0 @@
-../../../../owlly_room/cogs/webhook/__init__.py

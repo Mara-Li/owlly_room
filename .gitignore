@@ -6,5 +6,5 @@ __pycache__/
 *.pyc
 cogs/__pycache__/
 .env
-ITE
-TEST
+
+REPO TEST

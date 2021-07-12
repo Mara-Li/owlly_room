@@ -35,7 +35,7 @@ class CogAdmins(
     )
     @commands.has_permissions(administrator=True)
     async def set_prefix(self, ctx, prefix):
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "UPDATE SERVEUR SET prefix = ? WHERE idS = ?"
         var = (prefix, ctx.guild.id)
@@ -53,7 +53,7 @@ class CogAdmins(
     @commands.has_permissions(administrator=True)
     async def notes_config(self, ctx, chan: discord.TextChannel):
         server = ctx.guild.id
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "UPDATE SERVEUR SET notes=? WHERE idS=?"
         chanID = chan.id
@@ -66,7 +66,7 @@ class CogAdmins(
         await ctx.message.delete()
 
     async def roliste_init(self, ctx, role, type_db):
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         type_db=type_db
         sql = "UPDATE SERVEUR SET "+type_db+" = ? WHERE idS = ?"
@@ -111,7 +111,7 @@ class CogAdmins(
         aliases=["init_role", "assign_init"],
     )
     async def role_init(self, ctx, *role: discord.Role):
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "UPDATE SERVEUR SET roliste = ? WHERE idS = ?"
         role_list = []
@@ -140,7 +140,7 @@ class CogAdmins(
         aliases=["init_rm", "assign_rm"],
     )
     async def init_role_rm(self, ctx, *role: discord.Role):
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "UPDATE SERVEUR SET rolerm = ? WHERE idS = ?"
         role_list = []
@@ -163,7 +163,7 @@ class CogAdmins(
         db.close()
 
     async def inscription_role(self, ctx, type_db):
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         if type_db == "rm":
             sql = "SELECT rolerm FROM SERVEUR WHERE idS =?"
@@ -300,7 +300,7 @@ class CogAdmins(
     )
     async def recount(self, ctx, arg, ticket_id):
         await ctx.message.delete()
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         search_db = "SELECT num FROM TICKET WHERE idM=?"
         sql = "UPDATE TICKET SET num = ? WHERE idM=?"

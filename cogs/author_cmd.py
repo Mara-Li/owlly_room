@@ -24,7 +24,7 @@ class controlleur(
         await ctx.message.delete()
         channel_here = ctx.channel.id
         channel = self.bot.get_channel(channel_here)
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "SELECT channel_id FROM AUTHOR WHERE (userID = ? AND idS = ?)"
         var = (ctx.author.id, ctx.guild.id)
@@ -48,7 +48,7 @@ class controlleur(
         await ctx.message.delete()
         channel_here = ctx.channel.id
         channel = self.bot.get_channel(channel_here)
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "SELECT channel_id FROM AUTHOR WHERE (userID = ? AND idS = ?)"
         var = (ctx.author.id, ctx.guild.id)
@@ -73,7 +73,7 @@ class controlleur(
         await ctx.message.delete()
         channel_here = ctx.channel.id
         channel = self.bot.get_channel(channel_here)
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "SELECT channel_id FROM AUTHOR WHERE (userID = ? AND idS = ?)"
         var = (ctx.author.id, ctx.guild.id)
@@ -98,7 +98,7 @@ class controlleur(
         await ctx.message.delete()
         channel_here = ctx.channel.id
         channel = self.bot.get_channel(channel_here)
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "SELECT channel_id FROM AUTHOR WHERE (userID = ? AND idS = ?)"
         var = (ctx.author.id, ctx.guild.id)

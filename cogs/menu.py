@@ -80,7 +80,7 @@ class menu(
                 return
             elif rep.content.isnumeric():
                 idM = int(rep.content)
-                db = sqlite3.connect("owlly.db", timeout=3000)
+                db = sqlite3.connect("src/owlly.db", timeout=3000)
                 c = db.cursor()
                 sql = "SELECT idM FROM TICKET where idM=?"
                 c.execute(sql, (idM,))
@@ -171,7 +171,7 @@ class menu(
                 return
             elif rep.content.isnumeric():
                 idM = int(rep.content)
-                db = sqlite3.connect("owlly.db", timeout=3000)
+                db = sqlite3.connect("src/owlly.db", timeout=3000)
                 c = db.cursor()
                 sql = "SELECT idM FROM CATEGORY where idM=?"
                 c.execute(sql, (idM,))

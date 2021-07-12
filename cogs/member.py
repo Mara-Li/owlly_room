@@ -52,7 +52,7 @@ class memberUtils(commands.Cog, name="Membre", description="Des commandes géran
         fi = self.bot.get_cog("Fiche")
         addRole = []
         infoNew = []
-        db = sqlite3.connect("owlly.db", timeout=3000)
+        db = sqlite3.connect("src/owlly.db", timeout=3000)
         c = db.cursor()
         sql = "SELECT roliste FROM SERVEUR WHERE idS=?"
         c.execute(sql, (ctx.guild.id,))

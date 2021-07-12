@@ -109,7 +109,7 @@ async def create_ticket(self, ctx, bot):
         return message.author == ctx.message.author and ctx.message.channel == message.channel
 
     guild = ctx.message.guild
-    db = sqlite3.connect("owlly.db", timeout=3000)
+    db = sqlite3.connect("src/owlly.db", timeout=3000)
     c = db.cursor()
     q = await ctx.send(f"Quel est le titre de l'embed ?")
     rep = await bot.wait_for("message", timeout=300, check=checkRep)
@@ -396,7 +396,7 @@ async def create_category(self, ctx, bot):
         return message.author == ctx.message.author and ctx.message.channel == message.channel
 
     emoji = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"]
-    db = sqlite3.connect("owlly.db", timeout=3000)
+    db = sqlite3.connect("src/owlly.db", timeout=3000)
     c = db.cursor()
     chan = []
     q = await ctx.send(
